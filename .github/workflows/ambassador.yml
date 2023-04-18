@@ -1,0 +1,28 @@
+---
+apiVersion: getambassador.io/v2 
+kind: Mapping 
+metadata:
+  name: foo-app 
+spec:
+  prefix: /foo/ 
+  service: foo 
+  labels:
+    ambassador: 
+      - foo-app_label_group:
+        - foo-app
+      - total_request_group:
+        -remote_address 
+--- 
+apiVersion: getambassador.io/v2 
+kind: Mapping
+metadata: 
+  name: bar-app 
+spec:
+  prefix: /bar/ 
+  service: bar 
+  labels:
+    ambassador:
+      - bar-app_label_group:
+        - bar-app
+      -total_request_group:
+        - remote_address
