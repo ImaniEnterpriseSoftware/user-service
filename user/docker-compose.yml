@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  microservice-user:
+    container_name: microservice-user
+    build: ./user-microservice
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database-user
+    networks:
+      - spring-net
+  database-user:
+    image: mysql:latest
+    container_name: database-user
+    environment:
+      - MYSQL_DATABASE=userdb
+      - MYSQL_ROOT_USERNAME=root
+      - MYSQL_ROOT_PASSWORD=m@nipassword
+    ports:
+      - "3306:3306"
+    networks:
+      - spring-net
+    volumes:
+      - userdata:/var/lib/mysql
+      - userdata:/etc/mysql/conf.d
+
+
+networks:
+  spring-net:
+    name: spring-net
+    driver: bridge
+
+volumes:
+  userdata:
