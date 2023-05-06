@@ -2,10 +2,15 @@ version: '3.8'
 
 services:
   microservice-user:
+    image: imanileemans/user-microservice-microservice-user
     container_name: microservice-user
-    build: ./user-microservice
+    build:
+      context: /
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://database-user:3306/userdb?allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
     depends_on:
       - database-user
     networks:
@@ -24,12 +29,9 @@ services:
     volumes:
       - userdata:/var/lib/mysql
       - userdata:/etc/mysql/conf.d
-
-
 networks:
   spring-net:
     name: spring-net
     driver: bridge
-
 volumes:
   userdata:
