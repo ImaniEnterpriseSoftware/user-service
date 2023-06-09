@@ -4,14 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Delete unneccesary tests" />
+    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Delete unneccesary tests">
+      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -24,20 +47,28 @@
     </option>
   </component>
   <component name="ProjectId" id="2Os8d96Aj7Ynt80Yp9K823gzQoU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/imani/Documents/GitRepo/Pictacular/user-service",
+    "last_opened_file_path": "C:/Users/imani/Documents/GitRepo/Pictacular/gateway",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "e2b6de6d17261afebe83d15a5d57e32f",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -59,6 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682338013311</updated>
       <workItem from="1682338014321" duration="443000" />
+      <workItem from="1686226561200" duration="7997000" />
     </task>
     <task id="LOCAL-00001" summary="Delete unneccesary tests">
       <created>1682338075518</created>
