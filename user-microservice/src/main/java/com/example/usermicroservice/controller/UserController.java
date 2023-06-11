@@ -3,6 +3,7 @@ package com.example.usermicroservice.controller;
 import com.example.usermicroservice.jwt.JwtGeneratorInterface;
 import com.example.usermicroservice.model.User;
 import com.example.usermicroservice.service.UserService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -61,6 +62,27 @@ public class UserController {
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.CONFLICT);
         }
+    }
+
+    @GetMapping
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<User> getUserById(@PathVariable Long id) {
+        return userService.getUserById(id);
+    }
+
+    @PutMapping("/{id}")
+    public User updateUser(@PathVariable Long id, @RequestBody User user) {
+        return userService.updateUser(id, user);
+    }
+
+    @Transactional
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable Long id) {
+        userService.deleteUser(id);
     }
 
 }

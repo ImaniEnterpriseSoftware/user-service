@@ -8,9 +8,9 @@ services:
       context: /
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8083:8083"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://database-user:3306/userdb?allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
+      SPRING_DATASOURCE_URL: jdbc:mysql://database-user:3308/userdb?allowPublicKeyRetrieval=true&autoReconnect=true&useSSL=false
     depends_on:
       - database-user
     networks:
@@ -23,7 +23,7 @@ services:
       - MYSQL_ROOT_USERNAME=root
       - MYSQL_ROOT_PASSWORD=m@nipassword
     ports:
-      - "3306:3306"
+      - "3308:3308"
     networks:
       - spring-net
     volumes:

@@ -12,4 +12,8 @@ public interface UserService {
     public void saveUser(User user);
     public User getUserByNameAndPassword(String name, String password) throws Exception;
     public User getUserByName(String name);
+    public List<User> getAllUsers();
+    public Optional<User> getUserById(Long id);
+    public User updateUser(Long id, User user);
+    public void deleteUser(Long id);
 }
