@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Delete unneccesary tests">
-      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Jwt Login + Register">
+      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/config/BCryptConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682338013311</updated>
       <workItem from="1682338014321" duration="443000" />
-      <workItem from="1686226561200" duration="7997000" />
+      <workItem from="1686226561200" duration="13473000" />
     </task>
     <task id="LOCAL-00001" summary="Delete unneccesary tests">
       <created>1682338075518</created>
@@ -99,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682338075518</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Jwt Login + Register">
+      <created>1686349272553</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686349272553</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Delete unneccesary tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unneccesary tests" />
+    <MESSAGE value="Jwt Login + Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jwt Login + Register" />
   </component>
 </project>
