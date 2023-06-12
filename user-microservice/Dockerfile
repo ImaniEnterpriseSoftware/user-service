@@ -2,16 +2,16 @@
 # Build stage
 #
 FROM maven:3.8.6-openjdk-11 AS build
-COPY src /home/app/src
-COPY pom.xml /home/app
-RUN mvn -f /home/app/pom.xml clean package
+WORKDIR /home/app
+COPY src ./src
+COPY pom.xml ./
+RUN mvn clean package -DskipTests
+RUN mkdir -p target && mv target/*.jar target/app.jar
 
-RUN mkdir -p /var/lib/docker/tmp/buildkit-mount1935576331/target
 #
 # Package stage
 #
 FROM openjdk:17
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+COPY --from=build /home/app/target/app.jar /app.jar
 EXPOSE 8083
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
