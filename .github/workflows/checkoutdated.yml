@@ -19,4 +19,4 @@ jobs:
       - name: Build with Maven
         run: mvn clean install --file ../user-service/user-microservice/pom.xml
       - name: Check outdated dependencies
-        run: mvn versions:display-dependency-updates
+        run: mvn versions:display-dependency-updates --file ../user-service/user-microservice/pom.xml
