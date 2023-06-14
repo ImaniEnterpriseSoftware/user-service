@@ -23,4 +23,4 @@ jobs:
           context: user-microservice
           dockerfile: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-docker-image:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/user-service:latest
