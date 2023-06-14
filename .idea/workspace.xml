@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Changed DockerFile" />
+    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Changed DockerFile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1682338013311</updated>
       <workItem from="1682338014321" duration="443000" />
-      <workItem from="1686226561200" duration="23709000" />
+      <workItem from="1686226561200" duration="25701000" />
     </task>
     <task id="LOCAL-00001" summary="Delete unneccesary tests">
       <created>1682338075518</created>
@@ -129,7 +133,28 @@
       <option name="project" value="LOCAL" />
       <updated>1686564347262</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed DockerFile">
+      <created>1686564435123</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686564435123</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changed DockerFile">
+      <created>1686564588599</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686564588599</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changed DockerFile">
+      <created>1686564663610</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686564663610</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
