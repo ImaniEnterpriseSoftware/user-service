@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Changed DockerFile">
+    <list default="true" id="3e032403-f259-4b99-8084-d012c1406868" name="Changes" comment="Send user id in JWTToken.">
+      <change afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/testing/UserTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/config/FilterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/java/com/example/usermicroservice/jwt/JwtGeneratorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-microservice/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -18,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -46,25 +50,88 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/imani/Documents/GitRepo/Pictacular/gateway",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "e2b6de6d17261afebe83d15a5d57e32f",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/imani/Documents/GitRepo/Pictacular/gateway&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e2b6de6d17261afebe83d15a5d57e32f&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="JUnit.UserControllerTest">
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-microservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.usermicroservice.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.usermicroservice.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.example.usermicroservice.testing.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.loginUser_InvalidUser_ReturnsConflictStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-microservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.usermicroservice.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.usermicroservice.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.example.usermicroservice.testing.UserControllerTest" />
+      <option name="METHOD_NAME" value="loginUser_InvalidUser_ReturnsConflictStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.loginUser_ValidUser_ReturnsToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-microservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.usermicroservice.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.usermicroservice.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.example.usermicroservice.testing.UserControllerTest" />
+      <option name="METHOD_NAME" value="loginUser_ValidUser_ReturnsToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.postUser_ExceptionThrown_ReturnsConflictStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-microservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.usermicroservice.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.usermicroservice.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.example.usermicroservice.testing.UserControllerTest" />
+      <option name="METHOD_NAME" value="postUser_ExceptionThrown_ReturnsConflictStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserMicroserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="user-microservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.usermicroservice.UserMicroserviceApplication" />
@@ -72,6 +139,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.loginUser_InvalidUser_ReturnsConflictStatus" />
+        <item itemvalue="JUnit.UserControllerTest.postUser_ExceptionThrown_ReturnsConflictStatus" />
+        <item itemvalue="JUnit.UserControllerTest.loginUser_ValidUser_ReturnsToken" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +157,9 @@
       <option name="presentableId" value="Default" />
       <updated>1682338013311</updated>
       <workItem from="1682338014321" duration="443000" />
-      <workItem from="1686226561200" duration="25701000" />
+      <workItem from="1686226561200" duration="27635000" />
+      <workItem from="1686737957015" duration="598000" />
+      <workItem from="1686742649327" duration="5627000" />
     </task>
     <task id="LOCAL-00001" summary="Delete unneccesary tests">
       <created>1682338075518</created>
@@ -154,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686564663610</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Send user id in JWTToken.">
+      <created>1686734797194</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686734797194</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +251,7 @@
     <MESSAGE value="Fully working user + auth" />
     <MESSAGE value="DockerFile update" />
     <MESSAGE value="Changed DockerFile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed DockerFile" />
+    <MESSAGE value="Send user id in JWTToken." />
+    <option name="LAST_COMMIT_MESSAGE" value="Send user id in JWTToken." />
   </component>
 </project>

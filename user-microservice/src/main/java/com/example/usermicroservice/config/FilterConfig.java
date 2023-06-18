@@ -10,8 +10,7 @@ public class FilterConfig {
     public FilterRegistrationBean jwtFilter() {
         FilterRegistrationBean filter= new FilterRegistrationBean();
         filter.setFilter(new JwtFilter());
-        // provide endpoints which needs to be restricted.
-        // All Endpoints would be restricted if unspecified
+        // When endpoint is provided it will require a JWT token, no endpoint = everything is restricted.
         filter.addUrlPatterns("/api/users");
         filter.addUrlPatterns("/api/users/{id}");
         return filter;
